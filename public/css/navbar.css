@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+nav{
+  background: #0082e6;
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  color: #f2f2f2;
+  font-size: 33px;
+  line-height: 80px;
+  padding: 0 140px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+nav ul{
+  float: right;
+  margin-right: 60px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 2px;
+}
+nav ul li a{
+  color: #f2f2f2;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  /* text-transform: uppercase; */
+  font-family: 'Poppins', sans-serif;
+}
+a.active,a:hover{
+  background: #1b9bff;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media screen and (max-width: 952px){
+    body{
+        padding: 0;
+    }
+  label.logo{
+    font-size: 27px;
+    padding-left: 25px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 480px){
+    body{
+        padding: 0;
+    }
+  .checkbtn{
+    display: block;
+  }
+  .check + label {
+    display: block;
+    padding: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+    font-weight: bold;
+    background: #036;
+    color: white;
+  }
+
+  .check + label:active,
+  .check + label:focus,
+  .check + label:hover {
+    background: #06C;
+  }
+
+  .check + label:before {
+    content: "Show menu";
+  }
+
+  .check:checked + label {
+    margin: 0;
+  }
+
+  .check:checked + label:before {
+    content: "Hide Menu";
+  }
+
+  .check:checked ~ #mainMenu {
+    display: block;
+  }
+}
+
