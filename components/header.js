@@ -1,6 +1,6 @@
 const Header = () => (
     <div>
-        <h1 style={{textAlign: "center"}}>Latihan Next Js</h1>
+        <h1 style={{textAlign: "center"}}>INFORMASI BANYUWANGI</h1>
         <hr />
     </div>
 )

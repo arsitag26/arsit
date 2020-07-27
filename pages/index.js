@@ -5,8 +5,11 @@ import Layout from '../layouts/layout';
   return (
     <Layout>
       <Menu />
-      <h1>INFORMASI BANYUWANGI</h1> <br />
-      <p>Selamat datang di web INFORMASI BANYUWANGI, web ini berisi tentang informasi banyuwangi, baik seni, wisata, dll.</p>
+      <link rel="stylesheet" href="/css/index.css" />
+      <main>  
+        <p>Selamat datang di web INFORMASI BANYUWANGI, web ini berisi tentang informasi banyuwangi, baik seni, wisata, dll.</p>
+        
+      </main>
     </Layout>
   );
  }

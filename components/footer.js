@@ -1,5 +1,5 @@
 const Footer = () => (
-    <div>
+    <div style={{textAlign: "center"}}>
         <hr />
         <p>Agung Fahru Roji (1118101613)</p>
         <br />
